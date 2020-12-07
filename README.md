@@ -37,4 +37,4 @@ Once you see the "Generation completed!" message, it means that the generation h
 
 rhubarb-lip-sync-ccc is only tested on Mac OSX. I haven't try it on Windows but it should work.
 
-If you comeacross any question, welcome to submit an issue to the [demo](https://github.com/wzpan/lipsync-demo/issues) project. It's suggested to also attach you demo project files so that I can analyze your problem.
+If you come across any question, welcome to submit an issue to the [demo](https://github.com/wzpan/lipsync-demo/issues) project. It's suggested to also attach you demo project files so that I can analyze your problem.
