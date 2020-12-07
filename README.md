@@ -2,7 +2,7 @@
 
 ![](https://forum.cocos.org/uploads/default/optimized/3X/0/a/0a7f636acdc06f1c07b6bd2f55ce83dee06a3b9f_2_1380x698.jpeg)
 
-[中文说明](./README_zh)
+[中文说明](./README_zh.md)
 
 rhubarb-lip-sync-ccc (short for lipsync) is a Cocos Creator extension for quickly generating 2D mouth animation from voice recordings, based on [DanielSWolf/rhubarb-lip-sync](https://github.com/DanielSWolf/rhubarb-lip-sync). It analyzes your audio files, recognizes what is being said, then automatically generates lip sync information into Cocos Creator Animation Clip. Supports any kinds of languages.
 
