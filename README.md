@@ -6,10 +6,7 @@ rhubarb-lip-sync-ccc (short for lipsync) is a Cocos Creator extension for quickl
 
 ## Demo
 
-* Tutorial video:
-
-<iframe src="//player.bilibili.com/player.html?aid=458012711&bvid=BV1V5411G7cm&cid=263880799&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
+* Demo tutorial video: <https://www.bilibili.com/video/BV1V5411G7cm/>
 * For releated code, please visit [lipsync-demo](https://github.com/wzpan/lipsync-demo).
 
 ## How to use

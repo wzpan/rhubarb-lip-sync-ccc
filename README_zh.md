@@ -6,10 +6,7 @@ rhubarb-lip-sync-ccc 基于 [DanielSWolf /rhubarb-lip-sync](https://github.com/D
 
 ## Demo
 
-* 教学视频：
-
-<iframe src="//player.bilibili.com/player.html?aid=458012711&bvid=BV1V5411G7cm&cid=263880799&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
+* demo 视频：<https://www.bilibili.com/video/BV1V5411G7cm/>
 * 相关的示例仓库代码在：<https://github.com/wzpan/lipsync-demo>
 
 ## 使用方法
