@@ -22,7 +22,7 @@ module.exports = {
     'errorMissingMouth': 'Error: missing necessary mouth shapes!',
     'errorMissingAudio': 'Error: missing necessary voice recording file!',
     'errorMissingClip': 'Error: missing necessary animation clip!',
-    'isEnglish': 'Is English',
+    'isEnglish': 'Is English recording?',
     'languageTips': 'Whether the voice language is English. This will results in the recognizer we choose. For English recordings, we use PocketSphinx, while for other languages we use Phonetic.',
     'recognizing': 'Recognizing...',
     'completed': 'Generation completed!'

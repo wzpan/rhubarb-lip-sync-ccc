@@ -22,7 +22,7 @@ module.exports = {
     'errorMissingMouth': '错误：缺失必须的嘴型图！',
     'errorMissingAudio': '错误：缺失必须的录音文件！',
     'errorMissingClip': '错误：缺失必须的 Animation Clip 文件！',
-    'isEnglish': '是否英文',
+    'isEnglish': '是英文音频？',
     'languageTips': '录音是否为英文，将决定使用不同的识别器。对于英文录音，我们使用 PocketSphinx ；而对于其他语音的录音，我们使用 Phonetic。',
     'recognizing': '识别中...',
     'completed': '生成成功！'
