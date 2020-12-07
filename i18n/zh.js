@@ -1,0 +1,30 @@
+// zh.js
+module.exports = {
+    'generate': '生成',
+    'mouthshapes': '嘴型图',
+    'recording': '录音文件',
+    'clip': '目标 Animation Clip',
+    'mouthA': '用于发 “P”、 “B” 和 “M” 这类声音的闭合嘴型。和 Ⓧ 嘴型最接近，但嘴唇间有轻微的压力。',
+    'mouthB': '轻轻张嘴且牙齿闭合。用于发一些辅音（“S”、“T”、“K” 等）。也用于发一些诸如 bee 里的 "EE" 的元音。',
+    'mouthC': '张嘴。用于发诸如 men 里的 “EH” 和 bat 里的 “AE” 的元音。也用于上下文相关的辅音，以及从嘴型 Ⓐ 或 Ⓑ 向 Ⓓ 的过度。所以，请确保 ⒶⒸⒹ 和 ⒷⒸⒹ 的过度自然！',
+    'mouthD': '张大嘴。用于发诸如 father 里的 “AA” 这样的元音',
+    'mouthE': '微圆形嘴。用于发诸如 off 里的 “AO” 和 bird 里的 “ER” 的元音。也用于从嘴型 Ⓒ 或 Ⓓ 向 Ⓕ 的过度。请确保嘴巴不会张得比嘴型 Ⓒ 还大。ⒸⒺⒻ 和 ⒹⒺⒻ 的过度需自然！',
+    'mouthF': '嘟嘴唇。用于发诸如 you 里的 “UW” ，show 里的 “OW” ，以及 way 里的 “W”',
+    'mouthG': '上排牙齿触碰下唇的嘴型。用于发诸如 for 里的 “F” 和 very 里的 “V”',
+    'mouthH': '舌头触碰上排牙齿的嘴型。用于发诸如 long 里的 “L” 音。嘴巴至少要长得跟嘴型 Ⓒ 一样大，但不用像嘴型 Ⓓ 那么大。',
+    'mouthX': '嘴巴空闲时候的嘴型，用于没说话时的状态。应该和你的角色正在走路但没说话时的嘴巴一样。和嘴型 Ⓐ 相似，但相比之下嘴唇间的压力要小一些。对于嘴型 Ⓧ，嘴型应该是放松闭着的状态。',
+    'optional': '可选',
+    'recordingHolder': '请选择一个录音文件（.wav 或者 .ogg 格式）',
+    'openFile': '打开...',
+    'selected': '选择音频 ',
+    'recordingTips': '选择一个用于生成嘴型动画的语音',
+    'clipTips': '要覆盖到的目标 Animation Clip。您可以先创建一个空的 Animation Clip 文件，点击生成按钮后，插件将会自动覆盖这个文件。',
+    'errorMissingMouth': '错误：缺失必须的嘴型图！',
+    'errorMissingAudio': '错误：缺失必须的录音文件！',
+    'errorMissingClip': '错误：缺失必须的 Animation Clip 文件！',
+    'isEnglish': '是否英文',
+    'languageTips': '录音是否为英文，将决定使用不同的识别器。对于英文录音，我们使用 PocketSphinx ；而对于其他语音的录音，我们使用 Phonetic。',
+    'recognizing': '识别中...',
+    'completed': '生成成功！'
+};
+  

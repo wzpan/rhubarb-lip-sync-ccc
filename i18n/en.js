@@ -1,0 +1,30 @@
+// en.js
+module.exports = {
+    'generate': 'Generate',
+    'mouthshapes': 'Mouth shapes',
+    'recording': 'Voice recording file',
+    'clip': 'Target animation clip',
+    'mouthA': 'Closed mouth for the “P”, “B”, and “M” sounds. This is almost identical to the Ⓧ shape, but there is ever-so-slight pressure between the lips.',
+    'mouthB': 'Slightly open mouth with clenched teeth. This mouth shape is used for most consonants (“K”, “S”, “T”, etc.). It’s also used for some vowels such as the “EE” sound in bee.',
+    'mouthC': 'Open mouth. This mouth shape is used for vowels like “EH” as in men and “AE” as in bat. It’s also used for some consonants, depending on context. This shape is also used as an in-between when animating from Ⓐ or Ⓑ to Ⓓ. So make sure the animations ⒶⒸⒹ and ⒷⒸⒹ look smooth!',
+    'mouthD': 'Wide open mouth. This mouth shapes is used for vowels like “AA” as in father.',
+    'mouthE': 'Slightly rounded mouth. This mouth shape is used for vowels like “AO” as in off and “ER” as in bird. This shape is also used as an in-between when animating from Ⓒ or Ⓓ to Ⓕ. Make sure the mouth isn’t wider open than for Ⓒ. Both ⒸⒺⒻ and ⒹⒺⒻ should result in smooth animation.',
+    'mouthF': 'Puckered lips. This mouth shape is used for “UW” as in you, “OW” as in show, and “W” as in way.',
+    'mouthG': 'Upper teeth touching the lower lip for “F” as in for and “V” as in very.',
+    'mouthH': 'This shape is used for long “L” sounds, with the tongue raised behind the upper teeth. The mouth should be at least far open as in Ⓒ, but not quite as far as in Ⓓ.',
+    'mouthX': 'Idle position. This mouth shape is used for pauses in speech. This should be the same mouth drawing you use when your character is walking around without talking. It is almost identical to Ⓐ, but with slightly less pressure between the lips: For Ⓧ, the lips should be closed but relaxed.',
+    'optional': 'optional',
+    'recordingHolder': 'Please select a recording file (.wav or .ogg format)',
+    'openFile': 'Open...',
+    'selected': 'Selected voice recording file ',
+    'recordingTips': 'Select a voice recording file to generate animation',
+    'clipTips': 'The target animation clip to overwrite. You can firstly create a new empty Animation Clip file, and the extension will automatically overwrite it after clicking “Generate” button.',
+    'errorMissingMouth': 'Error: missing necessary mouth shapes!',
+    'errorMissingAudio': 'Error: missing necessary voice recording file!',
+    'errorMissingClip': 'Error: missing necessary animation clip!',
+    'isEnglish': 'Is English',
+    'languageTips': 'Whether the voice language is English. This will results in the recognizer we choose. For English recordings, we use PocketSphinx, while for other languages we use Phonetic.',
+    'recognizing': 'Recognizing...',
+    'completed': 'Generation completed!'
+};
+  

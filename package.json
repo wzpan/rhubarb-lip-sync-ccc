@@ -1,0 +1,19 @@
+{
+  "name": "lipsync",
+  "version": "0.0.1",
+  "description": "Automatically creates 2D mouth animation from voice recordings.",
+  "author": "wzpan",
+  "main": "main.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/lipsync/launch": {
+      "message": "lipsync:launch"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "lipsync",
+    "width": 400,
+    "height": 300
+  }
+}
