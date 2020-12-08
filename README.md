@@ -4,7 +4,7 @@
 
 [中文说明](./README_zh.md)
 
-rhubarb-lip-sync-ccc (short for lipsync) is a Cocos Creator extension for quickly generating 2D mouth animation from voice recordings, based on [DanielSWolf/rhubarb-lip-sync](https://github.com/DanielSWolf/rhubarb-lip-sync). It analyzes your audio files, recognizes what is being said, then automatically generates lip sync information into Cocos Creator Animation Clip. Supports any kinds of languages.
+rhubarb-lip-sync-ccc (short for lipsync) is a Cocos Creator extension for quickly generating 2D mouth animation from voice recordings, based on [DanielSWolf/rhubarb-lip-sync](https://github.com/DanielSWolf/rhubarb-lip-sync). It analyzes your audio files, recognizes what is being said, then automatically generates lip sync information into Cocos Creator Animation Clip. Supports any kind of languages.
 
 ## Demo
 
@@ -15,7 +15,7 @@ rhubarb-lip-sync-ccc (short for lipsync) is a Cocos Creator extension for quickl
 
 1. From the main menu of Cocos Creator, click【extensions】menu -> 【lipsync】-> 【launch】. Launch the panel of lipsync.
 2. Drag all the mouth shape images into the corresponding slot. Among these 9 mouth shapes, 6 of them (A, B, C, D, E, F) are necessary, while the others (G, H, X) are optional. But it's recommend to offer them so as to make the result more natural.
-3. Select a local recording file. If is recorded in another language rather than English, it's better to un-select the checkbox【Is English recording？】. (This will results in the recognizer we choose. For English recordings, we use PocketSphinx, while for other languages we use Phonetic.)
+3. Select a local recording file. If it is recorded in another language rather than English, it's better to un-select the checkbox【Is English recording？】. (This will results in the recognizer we choose. For English recordings, we use PocketSphinx, while for other languages we use Phonetic.)
 4. Create an empty Animation Clip, and drag into the 【Target Animation Clip】slot.
 
 After finishing the above 4 steps, click【Generate】button and the magic will begins. Now you can open the terminal panel of Cocos Creator and you will see the following logs:
