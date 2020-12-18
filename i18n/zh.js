@@ -25,6 +25,7 @@ module.exports = {
     'isEnglish': '是英文音频？',
     'languageTips': '录音是否为英文，将决定使用不同的识别器。对于英文录音，我们使用 PocketSphinx ；而对于其他语音的录音，我们使用 Phonetic。',
     'recognizing': '识别中...',
-    'completed': '生成成功！'
+    'completed': '生成成功！',
+    'failed': '生成失败！'
 };
   

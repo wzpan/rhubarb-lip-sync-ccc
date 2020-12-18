@@ -90,10 +90,10 @@ Editor.Panel.extend({
         onClickGenerate() {
           Editor.log('isEnglish: ' + this.isEnglish);
           if (!(this.mouthA && this.mouthB && this.mouthC && this.mouthD && this.mouthE &&
-            this.mouthF)) {
-              Editor.error(Editor.T('lipsync.errorMissingMouth'));
-              return;
-            }
+              this.mouthF)) {
+            Editor.error(Editor.T('lipsync.errorMissingMouth'));
+            return;
+          }
           if (!this.animationClip) {
             Editor.error(Editor.T('lipsync.errorMissingClip'));
             return;
@@ -174,34 +174,53 @@ Editor.Panel.extend({
             cmd = `${Editor.url('packages://lipsync/lib/rhubarb.exe')} --extendedShapes "${extendedShapes}" -f json -r ${recognizer} ${this.recordingFile} `;
           }
           Editor.log(Editor.T('lipsync.recognizing'));
-          exec(cmd, (error, stdout, stderr)=>{
+          exec(cmd, (error, stdout, stderr) => {
             if (error) {
               Editor.error(stderr);
               return;
             } else {
-              res = JSON.parse(stdout);
-              let mouthCues = res.mouthCues;              
-              // read the source animation clip file
-              Editor.log(this.animationClip);
-              Editor.assetdb.queryPathByUuid(this.animationClip, (error, filepath)=>{
-                let content = fs.readFileSync(filepath, 'utf8');
-                anim = JSON.parse(content);
-                anim.sample = 100;
-                anim.speed = 1;
-                anim._name = path.basename(filepath, '.anim');
-                anim._duration = res.metadata.duration;
-                anim.wrapMode = 1;
-                anim.curveData = {'comps': {"cc.Sprite": {"spriteFrame": []}}};
-                let spriteFrame = anim.curveData.comps["cc.Sprite"].spriteFrame;
-                for (let i=0; i<mouthCues.length; i++) {
-                  let mouthCue = mouthCues[i];
-                  spriteFrame.push({"frame": mouthCue.start, "value": {"__uuid__": this._getUuidByValue(mouthCue.value)}});
-                }
-                Editor.log(JSON.stringify(anim));
-                // overwrite the animation clip file
-                fs.writeFileSync(filepath, JSON.stringify(anim));
-                Editor.log(Editor.T('lipsync.completed'));
-              });              
+              try {
+                res = JSON.parse(stdout);
+                let mouthCues = res.mouthCues;
+                // read the source animation clip file
+                Editor.log(this.animationClip);
+                Editor.assetdb.queryPathByUuid(this.animationClip, (error, filepath) => {
+                  try {
+                    let content = fs.readFileSync(filepath, 'utf8');
+                    anim = JSON.parse(content);
+                    anim.sample = 100;
+                    anim.speed = 1;
+                    anim._name = path.basename(filepath, '.anim');
+                    anim._duration = res.metadata.duration;
+                    anim.wrapMode = 1;
+                    anim.curveData = {
+                      'comps': {
+                        "cc.Sprite": {
+                          "spriteFrame": []
+                        }
+                      }
+                    };
+                    let spriteFrame = anim.curveData.comps["cc.Sprite"].spriteFrame;
+                    for (let i = 0; i < mouthCues.length; i++) {
+                      let mouthCue = mouthCues[i];
+                      spriteFrame.push({
+                        "frame": mouthCue.start,
+                        "value": {
+                          "__uuid__": this._getUuidByValue(mouthCue.value)
+                        }
+                      });
+                    }
+                    Editor.log(JSON.stringify(anim));
+                    // overwrite the animation clip file
+                    fs.writeFileSync(filepath, JSON.stringify(anim));
+                    Editor.log(Editor.T('lipsync.completed'));
+                  } catch (error) {
+                    Editor.error(Editor.T('lipsync.failed') + ': ' + JSON.stringify(error.message));
+                  }
+                });
+              } catch (error) {
+                Editor.error(Editor.T('lipsync.failed') + ': ' + JSON.stringify(error.message));
+              }
             }
           });
         }
